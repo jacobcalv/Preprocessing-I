@@ -144,7 +144,26 @@ h2 {
   width: 35%;
   height: 0px auto;
   padding: 3%;
-  background-color: grey;
+  margin: 3% 7% 3% 7%;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+@media (max-width: 500px) {
+  .box {
+    width: 90%;
+  }
+}
+.box2 {
+  width: 35%;
+  height: 0px auto;
+  padding: 3%;
+  background-color: lightblue;
   margin: 3% 7% 3% 7%;
   border-radius: 5px;
   color: white;
@@ -153,8 +172,45 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .box2 {
+    width: 90%;
+  }
+}
+.ul {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: grey;
+  background-color: white;
+}
+.ol {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: grey;
+  background-color: black;
+}
+.years {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: lightcoral;
+}
 .container {
   width: 1600px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 header nav {
   width: 80%;
@@ -163,7 +219,14 @@ header nav {
   align-content: center;
   margin-left: 7%;
   margin-right: 7%;
+  margin-top: 4%;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 header nav a {
   padding: 7px;
@@ -175,35 +238,98 @@ header nav a {
 }
 .content-boxes {
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
   margin-left: 7%;
-  margin-right: 7%;
 }
 .container .intro {
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 5px solid #003f28;
+  background-color: #B6F6DE;
   margin-left: 7%;
   margin-right: 7%;
-  padding: 4%;
+  margin-bottom: 5%;
   border-radius: 5px;
 }
-.intro .intro-header {
-  width: 40%;
-  height: 0px auto;
+@media (max-width: 500px) {
+  .container .intro {
+    flex-direction: column;
+  }
 }
-.intro img {
-  width: 40%;
-  height: 0px auto;
+.container .intro .intro-header h1 {
+  width: 316px;
+  padding: 10px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 25px 15px 15px 15px;
+}
+@media (max-width: 800px) {
+  .container .intro .intro-header h1 {
+    width: 90%;
+    font-size: 1.6em;
+    padding-left: 22%;
+  }
+}
+.container .intro .intro-header .text {
+  display: flex;
+  flex-direction: column;
+  width: 535px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+@media (max-width: 500px) {
+  .container .intro .intro-header .text {
+    width: 90%;
+  }
+}
+.container .intro img {
+  width: 0px auto;
+  height: 348px;
+  border-radius: 5px;
+  margin: 15px 15px 15px 20px;
+  border: 4px solid black;
 }
 .skills {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+.skills h2 {
   width: 35%;
   height: 0px auto;
   padding: 3%;
-  background-color: grey;
+  margin: 3% 7% 3% 7%;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+@media (max-width: 500px) {
+  .skills h2 {
+    width: 90%;
+  }
+}
+.skills .skills-text {
+  width: 35%;
+  height: 0px auto;
+  padding: 3%;
+  background-color: lightblue;
   margin: 3% 7% 3% 7%;
   border-radius: 5px;
   color: white;
@@ -212,19 +338,56 @@ header nav a {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .skills .skills-text {
+    width: 90%;
+  }
+}
 .skills ul {
   padding: 5px;
   margin-top: 10px;
+  margin-right: 10px;
   border-radius: 5px;
   text-align: center;
   color: grey;
   background-color: white;
 }
 .work-history {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .work-history {
+    flex-direction: column;
+  }
+}
+.work-history p {
+  margin-right: 20px;
+}
+.work-history h2 {
   width: 35%;
   height: 0px auto;
   padding: 3%;
-  background-color: grey;
+  margin: 3% 7% 3% 7%;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+@media (max-width: 500px) {
+  .work-history h2 {
+    width: 90%;
+  }
+}
+.work-history .work-text {
+  width: 35%;
+  height: 0px auto;
+  padding: 3%;
+  background-color: lightblue;
   margin: 3% 7% 3% 7%;
   border-radius: 5px;
   color: white;
@@ -232,4 +395,71 @@ header nav a {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .work-history .work-text {
+    width: 90%;
+  }
+}
+.work-history ul {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: grey;
+  background-color: white;
+}
+.work-history ol {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: grey;
+  background-color: black;
+}
+.contact {
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 7%;
+  padding: 3%;
+  border: none;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 7%;
+  }
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 7%;
+}
+@media (max-width: 500px) {
+  .contact h2 {
+    text-align: left;
+  }
+}
+.contact .email {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: lightcoral;
+  margin-bottom: 3%;
+}
+.contact .phone {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: lightcoral;
 }

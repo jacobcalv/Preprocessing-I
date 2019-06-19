@@ -177,33 +177,6 @@ h2 {
     width: 90%;
   }
 }
-.ul {
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  text-align: center;
-  color: grey;
-  background-color: white;
-}
-.ol {
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  text-align: center;
-  color: grey;
-  background-color: black;
-}
-.years {
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  text-align: center;
-  color: white;
-  background-color: lightcoral;
-}
 .container {
   width: 1600px;
 }
@@ -418,6 +391,15 @@ header nav a {
   text-align: center;
   color: grey;
   background-color: black;
+}
+.work-history .years {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: lightcoral;
 }
 .contact {
   width: 1024px;

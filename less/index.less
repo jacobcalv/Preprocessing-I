@@ -48,12 +48,265 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+/* Set every element's box-sizing to border-box test */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+h1 {
+	font-size: 3em;
+	margin: 0.67em 0em 0.67em 0em;
+	display: flex;
+	align-items: center;
 }
 
+h2 {
+	font-size: 1.5em;
+	margin: 0.7em 0em 0.7em 0em;
+}
+
+@kaitoke-green: #003f28;  
+@ice-cold: #B6F6DE; 
+
+.box {
+	@media (max-width:500px) {
+		width: 90%;
+	}
+	width: 35%;
+	height: 0px auto;
+	padding: 3%;
+	margin: 3% 7% 3% 7%;
+	border-radius: 5px;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.box2 {
+	@media (max-width:500px) {
+		width: 90%;
+	}
+	width: 35%;
+	height: 0px auto;
+	padding: 3%;
+	background-color: lightblue;
+	margin: 3% 7% 3% 7%;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+.ul() {
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+	text-align: center;
+	color: grey;
+	background-color: white;
+}
+
+.ol() {
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+	text-align: center;
+	color: grey;
+	background-color: black;
+}
+
+.years() {
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	background-color: lightcoral;
+}
+
+.container {
+	width: 1600px;
+	@media (max-width: 500px) {
+		width: 100%
+	}
+}
+
+header nav {
+	@media (max-width: 500px) {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	width: 80%;
+	display: flex;
+	justify-content: left;
+	align-content: center;
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 4%;
+	padding: 2%;
+
+	a {
+		padding: 7px;
+		color: white;
+		background-color: grey;
+		text-decoration: none;
+		border-radius: 5px;
+		margin-right: 2%;
+	}
+	
+}
+.content-boxes {
+	width: 80%;
+	margin-left: 7%;
+}
+.container .intro {
+	@media(max-width: 500px){
+		flex-direction: column;
+	}
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: @ice-cold;
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 5%;
+	border-radius: 5px;
+	.intro-header {
+		h1 {
+			@media (max-width: 800px) {
+				width: 90%;
+				font-size: 1.6em;
+				padding-left: 22%;
+			}
+			width: 316px;
+			padding: 10px;
+			border-bottom: 4px solid white;
+			border-right: 4px solid white;
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			margin: 25px 15px 15px 15px;
+			
+
+		}
+		.text {
+			@media (max-width: 500px) {
+				width: 90%;
+			}
+			display: flex;
+			flex-direction: column;
+			width: 535px;
+			height:200px;
+			background-color: black;
+			color: white;
+			border-right: 4px solid white;
+			border-bottom: 4px solid white;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 15px;
+		}
+	}
+	img {
+		width: 0px auto;
+		height: 348px;
+		border-radius: 5px;
+		margin: 15px 15px 15px 20px;
+		border: 4px solid black;
+		
+	}
+}
+
+
+
+
+.skills {
+	@media(max-width: 500px) {
+		flex-direction: column;
+	}
+	display: flex;
+	h2 {
+		.box;
+	}
+	.skills-text {
+		.box2;
+	}
+	ul {
+		.ul;
+		
+	}
+}
+
+.work-history {
+	@media(max-width: 500px) {
+		flex-direction: column;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	p{
+		margin-right: 20px;
+	}
+	h2 {
+		.box;
+	}
+	.work-text {
+		.box2;
+	}
+	ul {
+		.ul;
+	}
+	ol {
+		.ol;
+	}
+	.years {
+		.years;
+	}
+
+}
+
+
+
+.contact {
+	@media (max-width:500px) {
+		width: 80%;
+		margin-left: 9%;
+		margin-right: 7%;
+	}
+	width: (1600px * .8) * .8;
+	display: flex;
+	justify-content: center;
+	margin-left: 15%;
+	margin-right: 7%;
+	padding: 3%;
+	border: none;
+	h2 {
+		@media (max-width:500px) {
+			text-align: left;
+		}
+		text-align: center;
+		margin-bottom: 7%;
+	}
+	.at {
+		
+	}
+	.email {
+		.years;
+		margin-bottom: 3%;
+	}
+	.phone {
+		.years;
+	}
+	
+}
